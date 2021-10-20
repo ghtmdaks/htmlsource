@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        color: green;
+      }
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--    순위
+          !important : 1000점
+          인라인 선언 : 500점
+          아이디 선택자 : 100점
+          클래스 선택자 : 10점 (:hover, :link, :active)
+          태그 선택자 : 1점 (::before, ::after)
+          전체 선택자 : 0점
+          상속 : -1점
+
+          :not() : => 점수가 없어서 항상 맨 꼴등
+          :not(h1) => not 자체는 점수 없지만 태그 선택자로 되서 1점
+          :not(.box) =>not 자체는 점수 없지만 클래스 선택자로 되서 10점
+      -->
+    <div class="area">
+      <p id="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+        molestiae perspiciatis. Veritatis debitis ex repellat aliquid voluptate
+        iste voluptas ea beatae earum! Alias vero expedita cupiditate, totam
+        veritatis nobis obcaecati.
+      </p>
+      <p id="text2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+        molestiae perspiciatis. Veritatis debitis ex repellat aliquid voluptate
+        iste voluptas ea beatae earum! Alias vero expedita cupiditate, totam
+        veritatis nobis obcaecati.
+      </p>
+    </div>
+  </body>
+</html>

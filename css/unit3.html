@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 1.5rem; /* 16px * 1.5 */
+      }
+      h2 {
+        font-size: 1.2rem; /* 16px * 1.2 */
+      }
+      p {
+        width: 70%;
+        font-size: 1.5rem; /* 16px * 1.5 */
+      }
+      span {
+        font-size: 0.8em; /* 16px * 1.5 *0.8 */
+      }
+    </style>
+  </head>
+  <!--
+    블럭 요소 : 전체 행
+    인라인 요소 : 태그의 속성만큼만 사용
+
+    CSS 단위
+    인쇄용 : 인치 cm pt
+    모니터용 : px(고정크기), em, rem, %(상태크기)
+
+    em : em 단위가 쓰여진 곳의 폰트 사이즈 배수
+    rem : 문서 기본값의 배수(16px)의 배수 
+
+    브라우저 폰트 키본 크기 : 16px
+    16px * 1.5 = 24 px
+    :root{} => 브라우져 폰트 기본 크기를 변경시킴
+    h1 => 12px * 2em = 24px
+-->
+
+  <body>
+    <h1>css 기본문법</h1>
+    <h2>사이즈</h2>
+    <p>
+      <span>Lorem ipsum,</span> dolor sit amet consectetur adipisicing elit. Vel
+      assumenda nesciunt eum aliquid commodi voluptatibus laudantium repellendus
+      reprehenderit, cumque inventore consectetur. Libero esse voluptas id
+      tenetur aperiam temporibus corrupti ea?
+    </p>
+  </body>
+</html>

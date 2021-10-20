@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인접형제</title>
+    <style>
+      /* div h1 + h2 {
+          color: red;
+      } */
+      /* h1 + h2
+         h1의 인접형제 h2
+         h1 다음에다가 스타일을 줄 수 있어
+         형제 1에다가 주고 싶어
+         body를 기준으로 자식을 물어보면 div야
+         자손을 물어보면 body안에 모든애들*/
+      div h1 ~ h2 {
+        /*h1 부터 h2 까지
+          h1 부터 따라 오는 모든 h2들까지
+          다 스타일을 줄거야*/
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>인접형제 선택자</h1>
+      <h2>형제 1</h2>
+      <h2>형제 2</h2>
+
+      <nav>
+        <h2>제목</h2>
+      </nav>
+    </div>
+  </body>
+</html>

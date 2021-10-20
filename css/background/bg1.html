@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        width: 100px;
+        height: 300px;
+        border: 1px solid red;
+        background-image: url(../img/bg.png);
+        /*repeat(기본값) 조그만한 이미지가 바둑판배열로 채워줘*/
+        /*repeat-x, repeat-y : 1자로 x축만 채워줘, y축반채워줘*/
+        /*no-repeat 이미지 크기만큼만 채워줘*/
+        background-repeat: no-repeat;
+        /*left top(기본값) : left 가로위치, top 세로위치*/
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+  </body>
+</html>
